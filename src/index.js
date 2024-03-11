@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Forecast from "./src/Forecast";
-import Search from "./src/Search";
+import Forecast from "./Forecast";
+import Search from "./Search";
+import Footer from "./Footer";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -10,6 +11,7 @@ root.render(
   <React.StrictMode>
     <Search />
     <Forecast />
+    <Footer />
   </React.StrictMode>
 );
 
