@@ -1,0 +1,14 @@
+body {
+  background: #edeaf1;
+  font-family: "IBM Plex Serif", serif;
+}
+.container {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 15px auto;
+  padding: 20px;
+}
+main {
+  padding: 20px 0;
+}
