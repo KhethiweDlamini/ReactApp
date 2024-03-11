@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Forecast from "./Forecast";
-import Search from "./Search";
+import Forecast from "./src/Forecast";
+import Search from "./src/Search";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

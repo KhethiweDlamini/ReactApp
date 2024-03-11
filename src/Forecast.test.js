@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Forecast from "./App";
+import Forecast from "./Forecast";
 
 test("renders learn react link", () => {
   render(<Forecast />);
