@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Forecast from "./Forecast";
+
 import Search from "./Search";
-import Footer from "./Footer";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Search />
-    <Forecast />
-    <Footer />
+    <App />
   </React.StrictMode>
 );
 
