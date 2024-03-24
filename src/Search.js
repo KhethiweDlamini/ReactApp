@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import axios from "axios";
+
 import "./Search.css";
 
 export default function Search() {
@@ -44,7 +45,7 @@ export default function Search() {
     <form onSubmit={handleSubmit} className="search-form">
       <input
         type="search"
-        placeholder="Enter a city.."
+        placeholder="Enter a city..."
         className="search-input"
         required
         onChange={updateCity}
@@ -63,7 +64,8 @@ export default function Search() {
           <h1>{displayCity}</h1>
           <div className="current-weather">
             <p className="current-details">
-              <FormattedDate />, {weather.description} <br />
+              <FormattedDate date={weather.date} />, {weather.description}{" "}
+              <br />
               Humidity: <strong>{weather.humidity}%</strong>, Wind:{" "}
               <strong>{weather.wind}km/h</strong>
             </p>
