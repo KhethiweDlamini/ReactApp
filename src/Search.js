@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Search.css";
 
 export default function Search() {
   const [city, setCity] = useState("");
-  const [displayCity, setDisplayCity] = useState("Paris");
+  const [displayCity, setDisplayCity] = useState("Pretoria");
   const [weather, setWeather] = useState({});
 
   function displayWeather(response) {
     setWeather({
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -34,7 +36,7 @@ export default function Search() {
 
   // useEffect to fetch weather for Paris as the default when the component mounts
   useEffect(() => {
-    fetchWeather("Paris");
+    fetchWeather("Pretoria");
   }, []);
   // The empty array as the second argument ensures this effect runs only once after the initial render
 
@@ -61,7 +63,7 @@ export default function Search() {
           <h1>{displayCity}</h1>
           <div className="current-weather">
             <p className="current-details">
-              Current Date + Time, {weather.description} <br />
+              <FormattedDate />, {weather.description} <br />
               Humidity: <strong>{weather.humidity}%</strong>, Wind:{" "}
               <strong>{weather.wind}km/h</strong>
             </p>
