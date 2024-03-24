@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
@@ -28,17 +28,16 @@ export default function Search() {
     setCity(event.target.value);
   }
 
-  function fetchWeather(city) {
+  const fetchWeather = useCallback((city) => {
     let apiKey = "64469ac67e6dc941feb5b50915a18dc7";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
     setDisplayCity(city);
-  }
+  }, []); // Add dependencies if `fetchWeather` uses any props or state
 
-  // useEffect to fetch weather for Paris as the default when the component mounts
   useEffect(() => {
     fetchWeather("Pretoria");
-  }, []);
+  }, [fetchWeather]);
   // The empty array as the second argument ensures this effect runs only once after the initial render
 
   let form = (
