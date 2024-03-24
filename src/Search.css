@@ -26,7 +26,8 @@ header {
 h1 {
   font-size: 48px;
   font-weight: 900;
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .current-details {
@@ -34,6 +35,7 @@ h1 {
   color: rgba(39, 33, 66, 0.4);
   font-weight: 400;
   font-size: 16px;
+  margin-top: 30px;
 }
 .current-details strong {
   color: rgb(239, 7, 204);
@@ -47,11 +49,13 @@ h1 {
 }
 .current-temp-icon {
   position: relative;
-  top: -10px;
+  top: -5px;
   font-size: 40px;
   margin-right: 10px;
 }
 .current-temp-value {
+  position: relative;
+  top: -20px;
   font-size: 80px;
   font-weight: bold;
 }
@@ -59,5 +63,5 @@ h1 {
 .current-temp-degree {
   font-size: 28px;
   position: relative;
-  top: -38px;
+  top: -58px;
 }
