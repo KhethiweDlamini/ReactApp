@@ -64,8 +64,8 @@ export default function Search() {
           <h1>{displayCity}</h1>
           <div className="current-weather">
             <p className="current-details">
-              <FormattedDate date={weather.date} />, {weather.description}{" "}
-              <br />
+              {weather.date && <FormattedDate date={weather.date} />},{" "}
+              {weather.description} <br />
               Humidity: <strong>{weather.humidity}%</strong>, Wind:{" "}
               <strong>{weather.wind}km/h</strong>
             </p>

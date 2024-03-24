@@ -20,5 +20,9 @@ export default function FormattedDate(props) {
     minutes = `0${minutes}`;
   }
 
-  return `${weekDays[day]} ${hours}:${minutes}`;
+  return (
+    <span>
+      {weekDays[day]} {hours}:{minutes}
+    </span>
+  );
 }
