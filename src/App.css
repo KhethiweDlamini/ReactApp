@@ -1,5 +1,7 @@
-Footer {
+.App {
+  width: 600px;
+}
+footer {
   font-size: 12px;
-  text-align: center;
-  margin-left: 30px;
+  margin: 0;
 }
