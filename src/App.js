@@ -5,9 +5,9 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <div>
+      <div className="InnerApp">
         <Search />
-        <footer>
+        <footer className="text-center">
           <p>
             This project was coded by{" "}
             <a

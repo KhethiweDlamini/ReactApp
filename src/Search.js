@@ -77,7 +77,11 @@ export default function Search() {
         {!isLoading && (
           <div className="current-temperature">
             <span className="current-temp-icon">
-              <img src={weather.icon} alt={weather.description} />
+              <img
+                src={weather.icon}
+                alt={weather.description}
+                className="img-fluid"
+              />
             </span>
             <span className="current-temp-value">
               {Math.round(weather.temperature)}

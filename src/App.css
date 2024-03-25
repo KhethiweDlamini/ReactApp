@@ -1,7 +1,17 @@
+body {
+  background-color: white;
+}
 .App {
-  width: 600px;
+  width: 500px;
+  margin: 0px auto;
+}
+.InnerApp {
+  background-color: white;
+  padding: 20px 20px;
+  border: 1px solid #d8cfde;
+  border-radius: 15px;
 }
 footer {
-  font-size: 12px;
-  margin: 0;
+  font-size: 11px;
+  margin-top: 5px;
 }

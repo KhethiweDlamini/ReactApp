@@ -1,6 +1,6 @@
 header {
   border-bottom: 1px solid #f9f7fe;
-  padding: 30px;
+  padding-top: 5px;
 }
 
 .search-input,
@@ -13,7 +13,7 @@ header {
 .search-input {
   background: #e8d3e245;
   color: rgba(39, 33, 66, 0.4);
-  width: 80%;
+  width: 70%;
   border-radius: 6px;
 }
 
@@ -25,18 +25,18 @@ header {
   border-radius: 5px;
 }
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 900;
   margin-top: 20px;
   margin-bottom: 0;
 }
 
 .current-details {
-  line-height: 24px;
+  line-height: 20px;
   color: rgba(39, 33, 66, 0.4);
   font-weight: 400;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .current-details strong {
   color: rgb(239, 7, 204);
@@ -50,14 +50,14 @@ h1 {
 }
 .current-temp-icon {
   position: relative;
-  top: -5px;
-  font-size: 40px;
-  margin-right: 10px;
+  top: -35px;
+  margin-right: -5px;
 }
+
 .current-temp-value {
   position: relative;
   top: -20px;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
 }
 
